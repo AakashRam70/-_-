@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="./images/image1.jpg" alt="Image 1" onclick="openModal(0)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image2.jpg" alt="Image 2" onclick="openModal(1)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image3.jpg" alt="Image 3" onclick="openModal(2)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image4.jpg" alt="Image 4" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image5.jpg" alt="Image 5" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image6.jpg" alt="Image 6" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image7.jpg" alt="Image 7" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image8.jpg" alt="Image 8" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image9.jpg" alt="Image 9" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image10.jpg" alt="Image 10" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image11.jpg" alt="Image 11" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image12.jpg" alt="Image 12" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image13.jpg" alt="Image 13" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image14.jpg" alt="Image 14" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image15.jpg" alt="Image 15" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image16.jpg" alt="Image 16" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image17.jpg" alt="Image  17" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image18.jpg" alt="Image 18" onclick="openModal(3)">
+    </div>
+    <div class="gallery-item">
+      <img src="./images/image19.jpg" alt="Image 19" onclick="openModal(3)">
+    </div>
+
+  </div>
+
+  <!-- Modal for image preview -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modal-image">
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
