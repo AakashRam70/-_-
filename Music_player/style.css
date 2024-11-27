@@ -29,12 +29,9 @@ body {
 /* Full-width Rectangular Song Cover Image */
 #cover {
     width: 100%;
-    /* Make the image take the full width */
     height: auto;
-    /* Maintain aspect ratio */
     border-radius: 10px;
     object-fit: cover;
-    /* Make sure the image is cropped to fill */
     margin-bottom: 20px;
 }
 
@@ -68,25 +65,18 @@ body {
 
 #timeline::-webkit-slider-thumb {
     -webkit-appearance: none;
-    /* Removes default appearance */
     background: #1abc9c;
     height: 5px;
-    /* Set to match track height */
     width: 5px;
-    /* Set to match track height */
     border-radius: 0;
-    /* Remove circular shape */
     cursor: pointer;
 }
 
 #timeline::-moz-range-thumb {
     background: #1abc9c;
     height: 5px;
-    /* Set to match track height */
     width: 5px;
-    /* Set to match track height */
     border-radius: 0;
-    /* Remove circular shape */
     cursor: pointer;
 }
 

@@ -61,5 +61,4 @@ playBtn.addEventListener('click', togglePlay);
 prevBtn.addEventListener('click', () => changeSong(-1));
 nextBtn.addEventListener('click', () => changeSong(1));
 
-// Load the first song initially
 loadSong(currentSongIndex);
