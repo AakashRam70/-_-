@@ -1,0 +1,148 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Music Player Container */
+.music-player {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Full-width Rectangular Song Cover Image */
+#cover {
+    width: 100%;
+    /* Make the image take the full width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: cover;
+    /* Make sure the image is cropped to fill */
+    margin-bottom: 20px;
+}
+
+/* Song Title and Info */
+#song-title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#song-info {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+/* Timeline */
+#timeline {
+    width: 100%;
+    height: 5px;
+    margin-top: 15px;
+    -webkit-appearance: none;
+    background: #333;
+    border-radius: 5px;
+}
+
+/* Remove the default circular thumb on input range */
+#timeline::-webkit-slider-runnable-track {
+    background: #3498db;
+    height: 5px;
+}
+
+#timeline::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Removes default appearance */
+    background: #1abc9c;
+    height: 5px;
+    /* Set to match track height */
+    width: 5px;
+    /* Set to match track height */
+    border-radius: 0;
+    /* Remove circular shape */
+    cursor: pointer;
+}
+
+#timeline::-moz-range-thumb {
+    background: #1abc9c;
+    height: 5px;
+    /* Set to match track height */
+    width: 5px;
+    /* Set to match track height */
+    border-radius: 0;
+    /* Remove circular shape */
+    cursor: pointer;
+}
+
+/* Audio Controls */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+    background-color: #333;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f1c40f;
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+/* Play Button */
+#play-btn {
+    background-color: #1abc9c;
+}
+
+#play-btn:hover {
+    background-color: #16a085;
+}
+
+/* Previous and Next Buttons */
+#prev-btn,
+#next-btn {
+    background-color: #3498db;
+}
+
+#prev-btn:hover {
+    background-color: #2980b9;
+}
+
+#next-btn:hover {
+    background-color: #2ecc71;
+}
